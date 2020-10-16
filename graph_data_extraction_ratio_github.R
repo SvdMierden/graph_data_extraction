@@ -286,7 +286,6 @@ ggsave("ba_conc.tiff",
 
 # ba plot for error
 # change y = ratio_err for y = diff_err to plot difference in stead of ration on y-axis.
-# nb, hlines cannot be plotted when data_ba_aux is created using the error ratio in stead of error difference.
 
 (ba_err <- ggplot(data_ba, aes(x = mean_err, y = ratio_err, colour = as.character(unique_id))) +
     geom_point(size = 3, alpha = 0.65) +
